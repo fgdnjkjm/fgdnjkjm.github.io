@@ -1,0 +1,121 @@
+body {
+    /* margin: 0; */
+    padding: 0;
+    background-color: #121120;
+
+}
+
+nav {
+    background-color: #121120;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    max-height: 50px;
+}
+
+.logo img {
+    max-height: 80px;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-right: 60px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+
+}
+
+.menu a {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+.menu li.active_html a {
+    color: #068FFF;
+    font-weight: bold;
+
+}
+
+/* heading */
+.heading h1 {
+    font-size: 92px;
+    color: #068FFF;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+/* content */
+/* .centered-div {
+    text-align: center;
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #EEEEEE;
+    font-family: 'Lato', sans-serif;
+}
+
+.highlight-text {
+    color: #068FFF;
+} */
+
+/* .image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: 380px;
+} */
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow-container img {
+    max-width: 100%;
+    max-height: 740px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -45px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 10px;
+    border-radius: 3px 0 0 3px;
+}

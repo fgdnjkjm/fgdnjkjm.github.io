@@ -1,0 +1,127 @@
+body {
+    /* margin: 0; */
+    padding: 0;
+    background-color: #121120;
+
+}
+
+
+nav {
+    background-color: #121120;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    max-height: 50px;
+
+
+}
+
+.logo img {
+    max-height: 80px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-right: 60px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+
+}
+
+.menu a {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+.menu li.active a {
+
+    color: #068FFF;
+    font-weight: bold;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 50px);
+}
+
+.background img {
+    width: 100%;
+}
+
+.Heading h1 {
+    color: #068FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 92px;
+}
+
+.Heading {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.Heading h2 {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+
+}
+
+/* below heading */
+.belowheading {
+    justify-content: center;
+    top: 20%;
+
+}
+
+.belowheading .picture img {
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 15px;
+
+}

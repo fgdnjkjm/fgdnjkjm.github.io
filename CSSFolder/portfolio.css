@@ -1,0 +1,177 @@
+body {
+    /* margin: 0; */
+    padding: 0;
+    background-color: #121120;
+
+}
+
+
+nav {
+    background-color: #121120;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    max-height: 50px;
+}
+
+.Heading h1 {
+    color: #068FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 92px;
+    text-align: center;
+}
+
+.logo img {
+    max-height: 80px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-right: 60px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+
+}
+
+.menu a {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+.menu li.active a {
+
+    color: #068FFF;
+    font-weight: bold;
+}
+
+/* Grid-Layout */
+/* .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.square-container {
+    background-color: #068FFF;
+    position: relative;
+    height: 325px;
+    width: 400px;
+} */
+
+.centered-content img {
+    justify-content: center;
+    width: 320px;
+    height: 200px;
+    margin-top: 25px;
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+}
+
+.game_logo img {
+    width: 50px;
+    height: 49px;
+    border-radius: 50%;
+}
+
+.paragraph {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: #EEEEEE;
+    padding: 5px;
+    width: 250px;
+}
+
+.logo-and-paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+
+}
+
+
+/* Container */
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+
+
+}
+
+.container .box {
+    position: relative;
+    height: 325px;
+    width: 400px;
+}
+
+.container .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #03a9f4, #ff0058);
+}
+
+.container .box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #03a9f4, #ff0058);
+    filter: blur(30px);
+}
+
+.container .box span {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.container .box span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+
+.container .box .content {
+    position: relative;
+    z-index: 10;
+    padding: 20px 40px;
+}
