@@ -160,5 +160,11 @@ input[type=checkbox] {
         display: block;
     }
 
+    .belowheading .picture img {
+        max-width: 80px;
+        max-height: 80px;
+        border-radius: 15px;
+
+    }
 
 }
