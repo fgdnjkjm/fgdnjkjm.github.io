@@ -2,6 +2,7 @@ body {
     /* margin: 0; */
     padding: 0;
     background-color: #121120;
+    margin-top: 50px;
 
 }
 
@@ -14,6 +15,11 @@ body {
     padding: 10px;
     position: relative;
     max-height: 50px;
+    position: fixed;
+    top: 0;
+    right: 1px;
+    width: 100%;
+    z-index: 1000;
 
 }
 
@@ -224,4 +230,13 @@ input[type=checkbox] {
         display: block;
     }
 
+
+    .content a {
+        max-width: 100px;
+        word-wrap: break-word;
+    }
+
+    .heading h1 {
+        margin-top: 150px;
+    }
 }

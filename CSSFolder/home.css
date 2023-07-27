@@ -2,6 +2,7 @@ body {
     /* margin: 0; */
     padding: 0;
     background-color: #121120;
+    margin-top: 50px;
 
 }
 
@@ -14,6 +15,11 @@ body {
     padding: 10px;
     position: relative;
     max-height: 50px;
+    position: fixed;
+    top: 0;
+    right: 1px;
+    width: 100%;
+    z-index: 1000;
 
 }
 
@@ -46,7 +52,6 @@ body {
 
 }
 
-
 .background {
     display: flex;
     justify-content: center;
@@ -54,7 +59,7 @@ body {
     height: calc(100vh - 50px);
 }
 
-.background img {
+.background #background_png img {
     width: 100%;
 }
 
@@ -115,8 +120,8 @@ body {
 }
 
 .belowheading .picture img {
-    max-width: 120px;
-    max-height: 120px;
+    max-width: 140px;
+    max-height: 140px;
     border-radius: 15px;
 
 }
@@ -147,6 +152,9 @@ input[type=checkbox] {
 
     }
 
+    .nav-links {
+        right: 0;
+    }
 
     .menu li+li {
         margin-top: 12px;
@@ -162,10 +170,17 @@ input[type=checkbox] {
 
     .belowheading .picture img {
         margin-top: 50px;
-        max-width: 80px;
-        max-height: 80px;
+        max-width: 130px;
+        max-height: 130px;
         border-radius: 15px;
 
     }
 
+    #background_png img {
+        display: none;
+    }
+
+    .Heading {
+        margin-top: 50px;
+    }
 }
