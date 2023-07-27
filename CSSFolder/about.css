@@ -15,7 +15,7 @@ body {
     position: relative;
     max-height: 50px;
     top: 0;
-    right: 1px;
+    right: 2px;
     width: 100%;
     z-index: 1000;
     position: fixed;
